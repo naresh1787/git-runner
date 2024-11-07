@@ -1,0 +1,14 @@
+name: kube deploy
+
+on:
+ push:
+   branch:
+     - main
+
+jobs:
+  deploy:
+     runs-on: "self-hosted"
+
+     steps:
+      - name: checkout
+        uses: actions/checkout@v2
