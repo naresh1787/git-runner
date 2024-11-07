@@ -12,7 +12,10 @@ jobs:
      steps:
       - name: checkout
         uses: actions/checkout@v2
+<<<<<<< HEAD
 
       - name: deploy to kube
         run: |
          kubectl apply -f git-runner/pod-demo.yml
+=======
+>>>>>>> ea0d4cc3ec322d704a2cebf48bdb5575183d7470
