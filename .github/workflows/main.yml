@@ -1,0 +1,18 @@
+name: kube deploy
+
+on:
+ push:
+   branch:
+     - main
+
+jobs:
+  deploy:
+     runs-on: "self-hosted"
+
+     steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: deploy to kube
+        run: |
+         kubectl apply -f git-runner/pod-demo.yml
