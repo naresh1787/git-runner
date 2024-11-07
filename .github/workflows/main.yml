@@ -15,4 +15,4 @@ jobs:
 
       - name: deploy to kube
         run: |
-         kubectl apply -f git-runner/pod-demo.yml
+         kubectl apply -f /home/github/git-runner/pod-demo.yml
